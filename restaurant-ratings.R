@@ -1,15 +1,4 @@
----
-title: 'EDA: Is there a cultural bias when rating ethnic cuisine ?'
-author: "JRB"
-date: "June 10, 2016"
-output: html_document
----
-
-#Question: Do british people rate american chinese restaurants differently than americans ?
-*This question was originally brought up by Paul Hodgkins in our of our discussions and I thought it would be a good application for data science....*
-
-* use Yelp APIs and get busy...
-```{r connect to YELP}
+## ----connect to YELP-----------------------------------------------------
 myAppId <- "ghOan2cbx0UzUjVsL7ks9A"
 appSecret <- "h5kMON9PwG2cc9XuhxqcisAH9F05XEiLd13aJIBY5ARpOYftEgaB7To5GGFhgKuk"
 appName <- "YELP"
@@ -43,4 +32,4 @@ locationDataContent = content(locationData)
 locationList=jsonlite::fromJSON(toJSON(locationDataContent))
 results <- data.frame(locationList)
 results$businesses.id
-````
+
