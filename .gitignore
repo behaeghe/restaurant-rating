@@ -3,4 +3,5 @@
 .RData
 .Ruserdata
 .scv
-# .gitignore
+.httr-oauth
+# .g-tignore
